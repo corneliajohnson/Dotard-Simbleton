@@ -117,3 +117,14 @@ export const useBusinesses = () => {
     business.addressStateCode === "NY")
   return newYorkBussiness
 }
+
+export const useAgents = () => {
+  const agentInfo = businesses.map(business => {
+    return {
+      "fullName": `${business.purchasingAgent.nameFirst} ${business.purchasingAgent.nameLast}`,
+      "company": `${business.companyName}`,
+      "phoneNumber": `${business.phoneWork}`
+    }
+  })
+  return agentInfo
+}
