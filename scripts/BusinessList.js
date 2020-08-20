@@ -7,7 +7,7 @@ let activeBussinessUI = document.querySelector(".active-businesses")
 
 
 export const businessList = () => {
-  activeBussinessUI.innerHTML = '<h1>Active Businesses</h1>';
+  activeBussinessUI.innerHTML = '<h1>New York Businesses</h1>';
   businesses.forEach(business => {
     activeBussinessUI.innerHTML += singleBussiness(business)
   });
