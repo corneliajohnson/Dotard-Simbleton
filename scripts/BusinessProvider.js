@@ -113,9 +113,9 @@ const businesses = [
 
 
 export const useBusinesses = () => {
-  const newYorkBussiness = businesses.filter(business =>
-    business.addressStateCode === "NY")
-  return newYorkBussiness
+  const activeBussiness = businesses.filter(business =>
+    business)
+  return activeBussiness
 }
 
 export const useAgents = () => {

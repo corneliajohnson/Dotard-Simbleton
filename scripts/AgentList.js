@@ -3,7 +3,7 @@ import { singleAgent } from './Agent.js'
 
 const agentInfo = useAgents()
 const agentInfoUI = document.querySelector('.agent-list')
-agentInfoUI.innerHTML = `<h2>Purchasing Agents</h2>`
+//agentInfoUI.innerHTML = `<h2>Purchasing Agents</h2>`
 
 export const agentList = () => {
   agentInfo.forEach(agent => {
